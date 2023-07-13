@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+</head>
+
+<body>
+  
+
+
+
+
+
+    <h1> Student Performance Prediction </h1>
+    <form method="POST" action="/predict">
+
+        <label>Hours Studied:</label>
+        <input type = "text" name = "hours_studied">
+        </select>
+
+        <br>
+        <br>
+
+        
+
+        <label>Previous Scores:</label>
+        <input type = "text" name = "previous_scores">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Sleep Hours:</label>
+        <input type = "text" name = "sleep_hours">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Extracurricular Activities:</label>
+        <label>Yes:</label> <input type = "radio" name= "extracurricular_activities" value = "Yes">
+        <label>No:</label> <input type = "radio" name= "extracurricular_activities" value = "No">
+
+        <br>
+        <br>
+        <label>Question Paper solved:</label>
+        <input type = "text" name = "sample_question_papers_practiced">
+        </select>
+
+        <br>
+        <br>
+
+        
+
+        <br>
+
+       
+
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>Student Performance: <b> {{ prediction }} Marks</b>  </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
+
